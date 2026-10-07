@@ -1,4 +1,4 @@
-# Simple Python Project
+# Python Basics
 
 A handful of small scripts written while learning the basics of Python. Each file explores one idea and runs on its own.
 
@@ -15,8 +15,8 @@ A handful of small scripts written while learning the basics of Python. Each fil
 You need Python 3.6 or newer. There are no packages to install.
 
 ```bash
-git clone https://github.com/walteraggor/simple-python-project.git
-cd simple-python-project
+git clone https://github.com/walteraggor/python-basics.git
+cd python-basics
 python greet.py
 ```
 
