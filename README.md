@@ -9,6 +9,7 @@ A handful of small scripts written while learning the basics of Python. Each fil
 | `check_types.py` | Checking the type of a value with `type()`, and reassigning a variable |
 | `greet.py` | Defining a function and calling it from an `if __name__ == "__main__":` block |
 | `greet_input.py` | Asking for a name with `input()`, and reusing a function from another file with `import` |
+| `space_remover.py` | Reading pasted multi-line text with `input()`, removing spaces with `.replace()`, and reading piped input from `sys.stdin` |
 
 The table goes from the simplest script to the one that uses the most ideas.
 
@@ -54,3 +55,20 @@ Hello, Ada!
 ```
 
 It does not have a `greet()` function of its own. It imports the one in `greet.py`, which is why `greet.py` keeps its own greeting inside `if __name__ == "__main__":`. That block runs when you start `greet.py` directly and is skipped when the file is imported, so `Hello, Walter!` is not printed here.
+
+**`space_remover.py`** takes pasted text and gives it back with the spaces taken out. Paste your text, then press Enter on an empty line to finish:
+
+```
+Paste your text, then press Enter on an empty line to finish:
+
+i am going
+
+--- Result ---
+iamgoing
+```
+
+Line breaks are kept; only spaces and tabs are removed. It also works when text is piped in, which skips the prompt:
+
+```bash
+echo "i am going" | python space_remover.py
+```
