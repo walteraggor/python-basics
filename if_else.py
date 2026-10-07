@@ -1,8 +1,9 @@
+# A variable and an if / else branch.
 
-kakepic = 10
-print(kakepic)
+number = 10
+print(number)
 
-if kakepic == 10:
-    print("kakepic is 10")
+if number == 10:
+    print("number is 10")
 else:
-    print(2)
+    print("number is not 10")
